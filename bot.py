@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from discord.ext import commands
 from tabulate import tabulate
 
-load_dotenv()
+# load_dotenv() uncomment this if using in a local deployment
 TOKEN=os.getenv('DISCORD_TOKEN')#getting discord token from .env file
 intents = discord.Intents.default()
 intents.message_content = True
