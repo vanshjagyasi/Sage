@@ -77,12 +77,30 @@ async def movies(ctx):
 #command created to give a random office quote
 @bot.command(name='office', help="responds with a random quote from the office")
 async def office(ctx):
-    office_quotes=[("Sometimes I’ll start a sentence and I don’t even know where it’s going."
-                   "I just hope I find it along the way."),
-                   ("I’m not superstitious,"
-                    "but I am a little stitious.."),
-                    ("I wish there was a way to know you’re"
-                     "in the good old days, before you’ve actually left them.")]
+    office_quotes = [
+        ("Sometimes I’ll start a sentence and I don’t even know where it’s going."
+         " I just hope I find it along the way."),
+        ("I’m not superstitious, but I am a little stitious."),
+        ("I wish there was a way to know you’re in the good old days, before you’ve actually left them."
+         ),
+        ("Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."
+         ),
+        ("Identity theft is not a joke, Jim! Millions of families suffer every year."
+         ),
+        ("How the turntables..."),
+        ("I am fast. To give you a reference point, I’m somewhere between a snake and a mongoose… and a panther."
+         ),
+        ("You miss 100% of the shots you don’t take. – Wayne Gretzky – Michael Scott."
+         ),
+        ("Bears. Beets. Battlestar Galactica."),
+        ("Well, well, well, how the turntables."),
+        ("I am Beyoncé, always."),
+        ("I talk a lot, so I’ve learned to just tune myself out."),
+        ("I am running away from my responsibilities. And it feels good."),
+        ("I knew exactly what to do. But in a much more real sense, I had no idea what to do."
+         ),
+        ("I feel God in this Chili’s tonight."),
+    ]
     response=random.choice(office_quotes)
     await ctx.send(response)
 
