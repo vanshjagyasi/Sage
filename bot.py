@@ -78,8 +78,7 @@ async def movies(ctx):
 @bot.command(name='office', help="responds with a random quote from the office")
 async def office(ctx):
     office_quotes = [
-        ("Sometimes I’ll start a sentence and I don’t even know where it’s going."
-         " I just hope I find it along the way."),
+        ("Sometimes I’ll start a sentence and I don’t even know where it’s going. I just hope I find it along the way."),
         ("I’m not superstitious, but I am a little stitious."),
         ("I wish there was a way to know you’re in the good old days, before you’ve actually left them."
          ),
